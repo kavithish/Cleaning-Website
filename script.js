@@ -20,3 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset();
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+
+    menuToggle.addEventListener("click", () => {
+        // Toggle the "active" class to show/hide the nav
+        nav.classList.toggle("active");
+    });
+});
